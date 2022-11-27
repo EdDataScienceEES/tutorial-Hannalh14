@@ -17,3 +17,4 @@ setwd("~/Desktop/EdDataScience/tutorial-Hannalh14/script")
 #Load dataset 
 dinodata <- read.csv("data.csv")
 view(dinodata)
+
