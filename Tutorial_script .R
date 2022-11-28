@@ -20,12 +20,17 @@ popdata <- read.csv("us_pop_by_state.csv")
 
 view(popdata)
 
-#data minipulation 
+#data manipulation 
+statepop <- popdata %>% slice(-c(52))
+view(statepop)
 
 #Make basic plot 
-dinotm <- treemap(dinodata,
-                  index = c("lived_in"),
-                  vSize = "length",
+poptm <- treemap(statepop,
+                  index = c("state"),
+                  vSize = "X2020_census",
                   type= "index")
-
+abvtm <- treemap(statepop,
+                 index = c("state_code"),
+                 vSize = "X2020_census",
+                 type = "index")
 
