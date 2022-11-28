@@ -37,10 +37,9 @@ abvtm <- treemap(statepop,
                  type = "index")
 
 
-birddata <- read_csv("Article12_2020_birdsEUpopulation.csv")
-View(birddata)
 
-birdtm <- treemap(birddata,
-                  index = c("taxFamily_en"),
-                  vSize = "population_minimum_size",
-                  type = "index")
+
+
+
+
+
