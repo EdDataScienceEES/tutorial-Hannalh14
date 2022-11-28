@@ -7,10 +7,12 @@
 install.packages("tidyverse")
 install.packages("treemap")
 install.packages("dplyr")
+install.packages("readr")
 #Load needed packages 
 library(tidyverse)
 library(treemap)
 library(dplyr)
+library(readr)
 
 #Set working directory to where you saved your files for this tutorial 
 setwd("~/Desktop/EdDataScience/tutorial-Hannalh14/script")
@@ -34,3 +36,11 @@ abvtm <- treemap(statepop,
                  vSize = "X2020_census",
                  type = "index")
 
+
+birddata <- read_csv("Article12_2020_birdsEUpopulation.csv")
+View(birddata)
+
+birdtm <- treemap(birddata,
+                  index = c("taxFamily_en"),
+                  vSize = "population_minimum_size",
+                  type = "index")
