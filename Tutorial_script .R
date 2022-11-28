@@ -40,11 +40,21 @@ abvtm <- treemap(statepop,
 
 #Add different elements to the plot
 ##Adding labels 
-abvtm <- treemap(statepop,
+tmtitle <- treemap(statepop,
                  index = c("state_code"),
                  vSize = "X2020_census",
                  type = "index",
                  title = "United States Population by State")
+##Changing color palette 
+tmcolorp <- treemap(statepop,
+                   index = c("state_code"),
+                   vSize = "X2020_census",
+                   type = "index",
+                   title = "United States Population by State",
+                   palette = "Spectral",
+                   border.col = "black",
+                   fontcolor.labels = "black")
+
 
 
 
