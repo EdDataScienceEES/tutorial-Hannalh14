@@ -8,13 +8,14 @@ install.packages("tidyverse")
 install.packages("treemap")
 install.packages("dplyr")
 install.packages("readr")
-install.packages("wesanderson")
+install.packages("d3treeR")
+#devtools::install_github("timelyportfolio/d3treeR") # use this code if d3treeR does not load 
 #Load needed packages 
 library(tidyverse)
 library(treemap)
 library(dplyr)
 library(readr)
-library(wesanderson)
+library(d3treeR)
 
 #Set working directory to where you saved your files for this tutorial 
 setwd("~/Desktop/EdDataScience/tutorial-Hannalh14/script")
@@ -54,7 +55,7 @@ tmcolorp <- treemap(statepop,
                    palette = "Spectral",
                    border.col = "black",
                    fontcolor.labels = "black")
-
+d3tree2(tmcolorp)
 
 
 

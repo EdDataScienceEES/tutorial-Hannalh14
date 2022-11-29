@@ -6,35 +6,26 @@ output: pdf_document
 layout: post
 tags: github datavis
 meta: Tutorials
-header-includes:
-  - \usepackage{float}
-  - \usepackage{sectsty}
-  - \usepackage{paralist}
-  - \usepackage{setspace}\spacing{1.5}
-  - \usepackage{fancyhdr}
-  - \usepackage{lastpage}
-  - \usepackage{dcolumn}
-  - \usepackage{natbib}\bibliographystyle{agsm}
-  - \usepackage[nottoc, numbib]{tocbibind}
+
 ---
 
 
 
 <div class="block">
 	
-	knitr::include_graphics("Script/tutorialhead.png")
+
 
 </div>
 
-### Tutorial Aims:
-#### Develop a good understanding of Treemaps and how they are useful 
-#### Understand how to upload data into your R Studio 
-#### Be able to transform data into a Treemap
-#### Be able to change the appearance of a Treemap 
+## Tutorial Aims:
+#### 1.Develop a good understanding of Treemaps and how they are useful 
+#### 2.Understand how to upload data into your R Studio 
+#### 3.Be able to transform data into a Treemap
+#### 4.Be able to change the appearance of a Treemap 
 
-### Steps: 
+## Steps: 
 
-#### <a href="#packages"> 1. Loading needed Packages </a>
+#### <a href="#packages"> 1. Loading needed packages </a>
 
 #### <a href="#data"> 2. Downloading data</a>
 
@@ -43,3 +34,26 @@ header-includes:
 #### <a href=”#change”> 4. Changing your Treemaps look</a> 
 
 #### <a href=”#more”> 5. More sources</a> 
+
+## What is a Treemap?
+
+In its most basic form, a Treemap is used to visualize proportions. Similar to a pie chart, a Treemap allows the reader to see different values as part of a whole, in this case a large rectangle instead of a circle. Treemaps are also super useful to display lots of information in a small amount of space. Using hierarchical Treemaps allow the plot to interactive and show different kinds of information. 
+
+Treemaps can come in multiple forms ranging from very basic to very complex. Today you will be learning the most basic kind of Treemap and how to make it interactive. 
+
+<a name="packages"></a>
+
+## 1. Loading needed packages
+
+### Subheadings like this
+
+Some text
+
+<a name="syntax"></a>
+
+## 2. Following a coding syntax etiquette
+
+
+
+
+
