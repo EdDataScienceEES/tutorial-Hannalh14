@@ -1,15 +1,29 @@
 ---
 title: "Creating a Treemap"
 author: "Hanna"
-date: "2022-12-02"
-meta: Tutorials
+date: '2022-12-02'
+output: pdf_document
 layout: post
 tags: github datavis
+meta: Tutorials
+header-includes:
+  - \usepackage{float}
+  - \usepackage{sectsty}
+  - \usepackage{paralist}
+  - \usepackage{setspace}\spacing{1.5}
+  - \usepackage{fancyhdr}
+  - \usepackage{lastpage}
+  - \usepackage{dcolumn}
+  - \usepackage{natbib}\bibliographystyle{agsm}
+  - \usepackage[nottoc, numbib]{tocbibind}
 ---
+
+
+
 <div class="block">
-	<center>
-		<img src="{{ site.baseurl }}/img/tutorialhead.png" alt="Img">
-	</center>
+	
+	knitr::include_graphics("Script/tutorialhead.png")
+
 </div>
 
 ### Tutorial Aims:
