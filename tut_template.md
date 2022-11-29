@@ -6,7 +6,6 @@ output: pdf_document
 layout: post
 tags: github datavis
 meta: Tutorials
-
 ---
 
 
@@ -41,11 +40,13 @@ In its most basic form, a Treemap is used to visualize proportions. Similar to a
 
 Treemaps can come in multiple forms ranging from very basic to very complex. Today you will be learning the most basic kind of Treemap and how to make it interactive. 
 
+
+
 <a name="packages"></a>
 
 ## 1. Loading needed packages
 
-### Subheadings like this
+
 
 Some text
 
