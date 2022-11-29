@@ -13,7 +13,7 @@ meta: Tutorials
 
 <div class="block">
 	
-<img src="Script/tutorialhead.jpg" /> 
+
 
 </div>
 
@@ -46,6 +46,17 @@ Treemaps can come in multiple forms ranging from very basic to very complex. Tod
 <a name="packages"></a>
 
 ## 1. Loading needed packages
+
+For this tutorial you will need 5 different packages. Copy the code below into your RStudio and run it to install and load the needed package. 
+
+```{r}
+install.packages("tidyverse")
+install.packages("treemap")
+install.packages("dplyr")
+install.packages("readr")
+install.packages("d3treeR")
+#devtools::install_github("timelyportfolio/d3treeR") # use this code if d3treeR does not install on the first try (remove the # to run this code)
+```
 
 
 
