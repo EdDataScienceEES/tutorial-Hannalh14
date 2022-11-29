@@ -33,7 +33,9 @@ meta: Tutorials
 
 #### <a href=”#change”> 4. Changing your Treemaps look</a> 
 
-#### <a href=”#more”> 5. More sources</a> 
+#### <a href=”#inter”> 5. Making your Treemap more interactive</a> 
+
+#### <a href=”#more”> 6. More sources</a> 
 
 ## What is a Treemap?
 
@@ -47,6 +49,7 @@ Treemaps can come in multiple forms ranging from very basic to very complex. Tod
 
 ## 1. Loading needed packages
 
+
 For this tutorial you will need 5 different packages. Copy the code below into your RStudio and run it to install and load the needed package. 
 
 ```{r}
@@ -58,10 +61,45 @@ install.packages("d3treeR")
 #devtools::install_github("timelyportfolio/d3treeR") # use this code if d3treeR does not install on the first try (remove the # to run this code)
 ```
 
+Once you have installed these packages it is time to load them up. Use the code below to do that. 
+
+```{r}
+library(tidyverse)
+library(treemap)
+library(dplyr)
+library(readr)
+library(d3treeR)
+```
 
 
-Some text
 
-<a name="syntax"></a>
+<a name="data"></a>
 
-## 2. Following a coding syntax etiquette
+## 2. Downloading data
+
+To get the needed data, please visit this repository. Once you have copied the repo, please set your working directory to where you saved it on your device. Use the following code to set your working directory.
+
+```{r}
+setwd("You_file_path")
+```
+
+<a name="plot"></a>
+
+## 3. Creating the Treemap 
+
+<a name="change"></a>
+
+## 4. Changing your Treemaps look 
+
+
+<a name="inter"></a>
+
+## 5. Making your Treemap interactive
+
+
+<a name="more"></a>
+
+## Learn more with these sources!
+
+
+
