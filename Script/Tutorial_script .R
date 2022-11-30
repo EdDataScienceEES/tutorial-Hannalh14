@@ -47,7 +47,7 @@ abvtm <- treemap(statepop,
                  index = c("state_code"),
                  vSize = "X2020_census",
                  type = "index",
-                 title = "United States Population by State (using state abbreviations)")
+                 title = "United States Population by State")
 
 
 #Add different elements to the plot

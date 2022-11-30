@@ -123,7 +123,7 @@ Now that our data is all sorted, it is time to create the Treemap. First, it is 
 
 The code below will result in your first Treemap! Try it out! 
 
-`poptm <- treemap(statepop,
+poptm <- treemap(statepop,
 
                   index = c("state"),
                   
@@ -131,12 +131,24 @@ The code below will result in your first Treemap! Try it out!
                   
                   type= "index",
                   
-                  title = "United States Population by State")`
+                  title = "United States Population by State")
                   
 You should have gotten something that looks like this. 
 
 
-![](wholepopplot.png)
+![](plotfullname.png)
+With all of those names of those states the Treemap has gotten a little crowded. something you want to ensure when making a Treemap is that it is legible, this means both the identifiers (the states names), and the visual proportions are easy to read. In the dataset you have retrieved there is another way to identify these states that is a better visualization of the data. Try the code below to see this new map. 
+
+abvtm <- treemap(statepop,
+                 
+                 index = c("state_code"),
+                 
+                 vSize = "X2020_census",
+                 
+                 type = "index",
+                 
+                 title = "United States Population by State")
+`
 
 
 <a name="change"></a>
