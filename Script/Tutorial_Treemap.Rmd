@@ -13,7 +13,7 @@ meta: Tutorials
 
 <div class="block">
 	
-
+![](tutorialhead.png)
 
 </div>
 
@@ -101,12 +101,42 @@ The next step in this process is to load the data from the repo and view it in y
 
 `view(popdata)` 
 
-An important thing to keep in mind if you decide to make a Treemap with your own data is to make sure your data is compatable. To make a Treemap you need to have data that has a numberic, usually continuous, value and 
+An important thing to keep in mind if you decide to make a Treemap with your own data is to make sure your data is compatable. To make a Treemap you need to have hierarchical data.Sort of like a nesting doll or an onion, data with various layers wrok well when creating Treemaps. In this tutorial you with be working with very very simple data that have very few layers.W will be using the US states and their populations recorded from the 2020 census. Something else to keep in mind if you are to use this method with your own data is to make sure the data doesn't have a total sum of your values. For example, the entire population of the US. This total can throw off the proportions of your Treemap so it is best to get rid of it. 
+
+Below you can see an example of a Treemap if we did not get rid of the whole population of the US. 
+
+![](wholepopplot.png)
+To avoid this, we need to get rid of this total in our data. That can be done with the code below. 
+
+`statepop <- popdata %>% slice(-c(52))`
+`view(statepop)`
+
+As you can see when you view the data, the last row has been removed. 
+
+This can also be relevant with observational data, you do not want a row that contains a sum of all of your observations. 
 
 
 <a name="plot"></a>
 
-## 3. Creating the Treemap 
+## 3. Creating the Treemap
+Now that our data is all sorted, it is time to create the Treemap. First, it is good to have an understanding of the code you will be running. We will be using the Treemap package you downloaded at the beginning of this tutorial. As you can see in the code you are going to run below, you must call both the Treemap package and the data that we sliced above. Some other important aspects to understand are what pieces of the data youa re using to create this plot."Index" is referring to the characters we are comparing, in this case it will be the US states. "vSize" is the numerical values we are comparing, in this instance it is the population from the 2020 census. Next is "type" that is just determining the color scheme used in the Treemap. Lastly, is title which is pretty self explanitory. 
+
+The code below will result in your first Treemap! Try it out! 
+
+`poptm <- treemap(statepop,
+
+                  index = c("state"),
+                  
+                  vSize = "X2020_census",
+                  
+                  type= "index",
+                  
+                  title = "United States Population by State")`
+                  
+You should have gotten something that looks like this. 
+
+
+![](wholepopplot.png)
 
 
 <a name="change"></a>

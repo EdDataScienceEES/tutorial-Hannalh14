@@ -30,19 +30,25 @@ view(popdata)
 statepop <- popdata %>% slice(-c(52))
 view(statepop)
 
+#code for example plot with whole pop still in the data 
+poptmwhole <- treemap(popdata,
+                 index = c("state"),
+                 vSize = "X2020_census",
+                 type= "index",
+                 title = "United States Population by State")
+
+
 #Make basic plot 
 poptm <- treemap(statepop,
-                  index = c("state"),
-                  vSize = "X2020_census",
-                  type= "index",
-                  title = "United States Population by State")
+                 index = c("state"),
+                 vSize = "X2020_census",type= "index",
+                 title = "United States Population by State")
 abvtm <- treemap(statepop,
                  index = c("state_code"),
                  vSize = "X2020_census",
                  type = "index",
                  title = "United States Population by State (using state abbreviations)")
 
-pdf(abvtm)
 
 #Add different elements to the plot
 ##Adding labels 
