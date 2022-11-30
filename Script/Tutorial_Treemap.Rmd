@@ -2,7 +2,8 @@
 title: "Creating a Treemap"
 author: "Hanna"
 date: '2022-12-02'
-output: pdf_document
+output:
+  pdf_document: default
 layout: post
 tags: github datavis
 meta: Tutorials
@@ -10,20 +11,19 @@ meta: Tutorials
 
 
 
-
 <div class="block">
+	
 
-<img src="{{ site.baseurl }}/tutorialhead.png" alt="Img" style="width: 800px;"/>
 
 </div>
 
 ## Tutorial Aims:
-#### 1.Develop a good understanding of Treemaps and how they are useful
-#### 2.Understand how to upload data into your R Studio
+#### 1.Develop a good understanding of Treemaps and how they are useful 
+#### 2.Understand how to upload data into your R Studio 
 #### 3.Be able to transform data into a Treemap
-#### 4.Be able to change the appearance of a Treemap
+#### 4.Be able to change the appearance of a Treemap 
 
-## Steps:
+## Steps: 
 
 #### <a href="#packages"> 1. Loading needed packages </a>
 
@@ -31,15 +31,17 @@ meta: Tutorials
 
 #### <a href=”#plot”> 3. Creating the Treemap</a>
 
-#### <a href=”#change”> 4. Changing your Treemaps look</a>
+#### <a href=”#change”> 4. Changing your Treemaps look</a> 
 
-#### <a href=”#more”> 5. More sources</a>
+#### <a href=”#inter”> 5. Making your Treemap more interactive</a> 
+
+#### <a href=”#more”> 6. More sources</a> 
 
 ## What is a Treemap?
 
-In its most basic form, a Treemap is used to visualize proportions. Similar to a pie chart, a Treemap allows the reader to see different values as part of a whole, in this case a large rectangle instead of a circle. Treemaps are also super useful to display lots of information in a small amount of space. Using hierarchical Treemaps allow the plot to interactive and show different kinds of information.
+In its most basic form, a Treemap is used to visualize proportions. Similar to a pie chart, a Treemap allows the reader to see different values as part of a whole, in this case a large rectangle instead of a circle. Treemaps are also super useful to display lots of information in a small amount of space. Using hierarchical Treemaps allow the plot to interactive and show different kinds of information. 
 
-Treemaps can come in multiple forms ranging from very basic to very complex. Today you will be learning the most basic kind of Treemap and how to make it interactive.
+Treemaps can come in multiple forms ranging from very basic to very complex. Today you will be learning the most basic kind of Treemap and how to make it interactive. 
 
 
 
@@ -47,21 +49,70 @@ Treemaps can come in multiple forms ranging from very basic to very complex. Tod
 
 ## 1. Loading needed packages
 
-For this tutorial you will need 5 different packages. Copy the code below into your RStudio and run it to install and load the needed package.
 
-```{r}
-install.packages("tidyverse")
-install.packages("treemap")
-install.packages("dplyr")
-install.packages("readr")
-install.packages("d3treeR")
-#devtools::install_github("timelyportfolio/d3treeR") # use this code if d3treeR does not install on the first try (remove the # to run this code)
-```
+For this tutorial you will need 5 different packages. Copy the code below into your RStudio and run it to install and load the needed package. 
 
 
 
-Some text
+`install.packages("tidyverse")`
 
-<a name="syntax"></a>
+`install.packages("treemap")`
 
-## 2. Following a coding syntax etiquette
+`install.packages("dplyr")`
+
+
+`install.packages("readr")`
+
+
+`install.packages("d3treeR")`
+
+
+`devtools::install_github("timelyportfolio/d3treeR") # use this code if d3treeR does not install on the first try (remove the # to run this code)
+`
+
+
+Once you have installed these packages it is time to load them up. Use the code below to do that. 
+
+
+`library(tidyverse)`
+
+`library(treemap)`
+
+`library(dplyr)`
+
+`library(readr)`
+
+`library(d3treeR)`
+
+
+
+<a name="data"></a>
+
+## 2. Downloading data
+
+To get the needed data, please visit this repository. Once you have copied the repo, please set your working directory to where you saved it on your device. Use the following code to set your working directory.
+
+
+`setwd("You_file_path")`
+
+
+<a name="plot"></a>
+
+## 3. Creating the Treemap 
+
+
+<a name="change"></a>
+
+## 4. Changing your Treemaps look 
+
+
+<a name="inter"></a>
+
+## 5. Making your Treemap interactive
+
+
+<a name="more"></a>
+
+## Learn more with these sources!
+
+
