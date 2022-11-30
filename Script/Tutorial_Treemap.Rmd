@@ -95,6 +95,14 @@ To get the needed data, please visit this repository. Once you have copied the r
 
 `setwd("You_file_path")`
 
+The next step in this process is to load the data from the repo and view it in your RStudio. Use the code below to do that. 
+
+`popdata <- read.csv("us_pop_by_state.csv")` 
+
+`view(popdata)` 
+
+An important thing to keep in mind if you decide to make a Treemap with your own data is to make sure your data is compatable. To make a Treemap you need to have data that has a numberic, usually continuous, value and 
+
 
 <a name="plot"></a>
 
