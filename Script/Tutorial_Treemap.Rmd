@@ -3,7 +3,7 @@ title: "Creating a Treemap"
 author: "Hanna"
 date: '2022-12-02'
 output:
-  pdf_document: default
+  html_document: default
 layout: post
 tags: github datavis
 meta: Tutorials
