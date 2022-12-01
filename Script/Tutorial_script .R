@@ -66,13 +66,12 @@ tmcolorp <- treemap(statepop,
                    border.col = "black",
                    fontcolor.labels = "black")
 
-United_States_Population_by_State <- tmcolorp
+United_States_Population_by_State <- tmcolorp #this shows up as the title
 
-d3tree2(United_States_Population_by_State)
+d3tree2(United_States_Population_by_State) #interactive 
 
 
 
-                      
 
 
 
