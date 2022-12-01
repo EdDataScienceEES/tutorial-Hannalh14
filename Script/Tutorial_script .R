@@ -49,7 +49,6 @@ abvtm <- treemap(statepop,
                  type = "index",
                  title = "United States Population by State")
 
-
 #Add different elements to the plot
 ##Adding labels 
 tmtitle <- treemap(statepop,

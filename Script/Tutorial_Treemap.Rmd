@@ -149,11 +149,16 @@ abvtm <- treemap(statepop,
                  
                  title = "United States Population by State")
 `
+You should see something like this.
+
+![](abrvtreemap.png)
 
 
 <a name="change"></a>
 
 ## 4. Changing your Treemaps look 
+
+Like all plots, the most fun part about creating them is being able to make them look really nice and fun! Below is the code for a similar map to before with some different aspects changed. There are many different color palettes to choose from, check out [this link](https://www.datanovia.com/en/blog/the-a-z-of-rcolorbrewer-palette/#:~:text=RColorBrewer%20is%20an%20R%20package,Install%20and%20load%20RcolorBrewer%20package) for some palette inspiration, or try your hand at making your own color palette!   
 
 
 <a name="inter"></a>
