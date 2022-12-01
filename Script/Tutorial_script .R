@@ -65,10 +65,14 @@ tmcolorp <- treemap(statepop,
                    palette = "Spectral",
                    border.col = "black",
                    fontcolor.labels = "black")
-d3tree2(tmcolorp)
+
+United_States_Population_by_State <- tmcolorp
+
+d3tree2(United_States_Population_by_State)
 
 
 
+                      
 
 
 

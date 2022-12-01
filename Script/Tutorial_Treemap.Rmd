@@ -106,7 +106,7 @@ An important thing to keep in mind if you decide to make a Treemap with your own
 Below you can see an example of a Treemap if we did not get rid of the whole population of the US. 
 
 ![](wholepopplot.png)
-To avoid this, we need to get rid of this total in our data. That can be done with the code below. 
+To avoid this, we need to get rid of this total in our data. That can be done with the code below. Note: this code does gets rid of the territory of Washington D.C. This data collect D.C. as its own district so we will be keeping it to make the data consistent.   
 
 `statepop <- popdata %>% slice(-c(52))`
 `view(statepop)`
@@ -160,14 +160,54 @@ You should see something like this.
 
 Like all plots, the most fun part about creating them is being able to make them look really nice and fun! Below is the code for a similar map to before with some different aspects changed. There are many different color palettes to choose from, check out [this link](https://www.datanovia.com/en/blog/the-a-z-of-rcolorbrewer-palette/#:~:text=RColorBrewer%20is%20an%20R%20package,Install%20and%20load%20RcolorBrewer%20package) for some palette inspiration, or try your hand at making your own color palette!   
 
+The code below changes the color palette and also secures the font and border colors for this Treemap. Give it a go!
+
+tmcolorp <- treemap(statepop,
+                   
+                   index = c("state_code"),
+                   
+                   vSize = "X2020_census",
+                   
+                   type = "index",
+                   
+                   title = "United States Population by State",
+                   
+                   palette = "Spectral",
+                   
+                   border.col = "black",
+                   
+                   fontcolor.labels = "black")
+
 
 <a name="inter"></a>
 
 ## 5. Making your Treemap interactive
 
+Treemaps have the potential to be very complex and elaborate. Today we made a very basic Treemap, but that doesn't mean we can't spruce it up just a little but more and make it more informative. The code below uses a package called "d3treeR", this package allows you to make interactive Treemaps. This allows your Treemap to have more information and still look neat on the outside. To see more of these interactive Treemaps, please see the reading below. 
+
+Give this code a try!
+
+
+United_States_Population_by_State <- tmcolorp #This renames the previous plot so it will show up as the heading.
+
+d3tree2(United_States_Population_by_State)
+
+As you can see the actual populations of each state show up when you put your curser over the states section. This interactive feature would work even better with dense hierarchical data. If you wish to explore this feature more check out these two sources! Using [Plotly](https://plotly.com/r/treemaps/) and using [d3tree](https://d3-graph-gallery.com/treemap.html)   
+
+
+
 
 <a name="more"></a>
 
 ## Learn more with these sources!
+
+[More basics of Treemaps](https://r-graph-gallery.com/236-custom-your-treemap)
+
+[Treemap reading](https://www.r-bloggers.com/2018/09/simple-steps-to-create-treemap-in-r/)
+
+[Why Treemaps are better than pie charts](https://www.data-to-viz.com/caveat/pie.html)
+
+
+
 
 
