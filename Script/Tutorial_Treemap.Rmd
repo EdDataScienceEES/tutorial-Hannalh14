@@ -90,7 +90,7 @@ Once you have installed these packages it is time to load them up. Use the code 
 
 ## 2. Downloading data
 
-To get the needed data, please visit this repository. Once you have copied the repo, please set your working directory to where you saved it on your device. Use the following code to set your working directory.
+To get the needed data, [please visit this repository](https://github.com/EdDataScienceEES/tutorial-Hannalh14). Once you have copied the repo, please set your working directory to where you saved it on your device. Use the following code to set your working directory.
 
 
 `setwd("You_file_path")`
