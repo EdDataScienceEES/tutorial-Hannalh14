@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.21)  1 DEC 2022 16:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.21)  1 DEC 2022 16:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -399,25 +399,41 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 72.
 (/Users/hannalord-howe/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+<tutorialhead.png, id=4, 1172.38pt x 218.8175pt>
+File: tutorialhead.png Graphic file (type png)
+<use tutorialhead.png>
+Package pdftex.def Info: tutorialhead.png  used on input line 73.
+(pdftex.def)             Requested size: 469.7487pt x 87.67569pt.
+[1
 
-LaTeX Warning: File `tutorialhead.png' not found on input line 73.
+{/Users/hannalord-howe/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./tutorialhead.png>]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 143.
+(/Users/hannalord-howe/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+[]\T1/lmtt/m/n/10 devtools::install_github("timelyportfolio/d3treeR") # use this code if d3treeR does not
+ []
 
 
-! Package pdftex.def Error: File `tutorialhead.png' not found: using draft setting.
+LaTeX Warning: File `wholepopplot.png' not found on input line 201.
+
+
+! Package pdftex.def Error: File `wholepopplot.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.73 \includegraphics{tutorialhead.png}
-                                        
+l.201 \includegraphics{wholepopplot.png}
+                                         To avoid this, we need to get rid of 
 Here is how much of TeX's memory you used:
- 10439 strings out of 476931
- 164596 string characters out of 5824583
- 494662 words of memory out of 5000000
- 31531 multiletter control sequences out of 15000+600000
- 490523 words of font info for 47 fonts, out of 8000000 for 9000
+ 10521 strings out of 476931
+ 166011 string characters out of 5824583
+ 502662 words of memory out of 5000000
+ 31578 multiletter control sequences out of 15000+600000
+ 496835 words of font info for 50 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,6n,77p,254b,382s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,6n,77p,254b,434s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 !  ==> Fatal error occurred, no output PDF file produced!
