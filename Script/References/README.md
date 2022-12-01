@@ -22,4 +22,10 @@ https://medium.com/markdown-monster-blog/getting-images-into-markdown-documents-
 
 https://www.nngroup.com/articles/treemaps/#:~:text=Definition%3A%20Treemaps%20are%20visualizations%20for,each%20node%20within%20that%20branch.
 
+## Data Reference 
+
+I got the data that I used from an account on kaggle. The license for the data it public domain. 
+
+https://www.kaggle.com/datasets/alexandrepetit881234/us-population-by-state
+
 
