@@ -3,7 +3,7 @@
 
 In this repo you will find all of the materials needed to reproduce my tutorial for creating a Treemap. 
 
-###Table of contents 
+### Table of contents 
 #### Idea generation and reflection 
      In this folder you will find my original ideas for my tutorial topic and a reflection I wrote about this process. 
 #### Instructions
